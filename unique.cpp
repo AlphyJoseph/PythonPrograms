@@ -1,3 +1,4 @@
+//check if all characters in the string are unique
 #include<iostream>
 #include<string.h>
 #include<stdlib.h>
@@ -5,7 +6,7 @@ using namespace std;
 //#include<process.h>
 void uniqueChar(char str[200])
 {
-	int char_set[128];
+	int char_set[128]={0};
 	if (strlen(str)>128)
 	{
 		cout<<"Characters are not unique"<<endl;
