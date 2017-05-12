@@ -24,8 +24,10 @@ int main() {
   if(pch!=NULL)
     cout<<"YES"<<endl;
   else
-  	val=check(str,sub,0,0);
-  cout<<val;
+  	{
+  		val=check(str,sub,0,0);
+    	cout<<val;
+  	}
   
   }
   return 0;
