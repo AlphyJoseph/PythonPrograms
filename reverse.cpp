@@ -4,7 +4,7 @@ struct node
 {
 	int data;
 	struct node *link;
-}*start;
+}*head;
 class linked_list
 {
 public:
@@ -61,4 +61,8 @@ node * linked_list :: create_node(int value)
 		temp->link=NULL;
 		return temp;
 	}
+}
+void linked_list :: insert_last()
+{
+	
 }
