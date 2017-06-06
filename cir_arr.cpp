@@ -1,20 +1,22 @@
 #include<iostream>
-#include<stdlib>
+#include<stdlib.h>
+using namespace std;
 int j=0;
+int n,k,q;
+	int a[100000],temp[100000],op[100];
 int main()
 {
-	int n,k,q;
-	int a[100000],temp[100000]op[100];
+	
 	cin>>n>>k>>q;
 	for(int i1=0;i1<n;i1++)
 	{
 		cin>>a[i1];
 	}
-	int i=n-1;
+	int i=n-k;
 	while(k--)
 	{
 		temp[j]=a[i];
-		--i;
+		++i;
 		++j;
 	}
 	int m=0;
