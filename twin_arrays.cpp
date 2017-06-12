@@ -20,18 +20,18 @@ int main() {
     cout<<"minimum sum=";
     for(int i=0;i<n;i++)
         {
-            cout<<"i loop"<<endl;
+            //cout<<"i loop"<<endl;
         for(int j=0;j<n;j++)
             {
-                cout<<"j loop"<<endl;
+                //cout<<"j loop"<<endl;
             if(i!=j)
                 {
-                    cout<<"first if"<<endl;
+                    //cout<<"first if"<<endl;
                 sum=ar1[i]+ar2[j];
                 if(sum<min_sum)
                     {
-                        cout<<"last"<<endl;
-                    sum=min_sum;
+                        //cout<<"last"<<endl;
+                    min_sum=sum;
                 }
             }
         }
