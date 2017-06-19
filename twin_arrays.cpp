@@ -1,3 +1,4 @@
+/*given 2 arrays find the minimum sum of 2 nos from each array such that both these numbers don't have the same index position*/
 #include <bits/stdc++.h>
 
 using namespace std;
