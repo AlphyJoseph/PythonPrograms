@@ -4,12 +4,13 @@
 using namespace std;
 int main()
 {
-	  int n,val;
+	int n,val;
     cin >> n;
     char s[100],s1[100];
     cin >> s;
     int k;
     cin >> k;
+    k %= 26;
     for(int i=0; i < n; i++)
     {
         if(isalpha(s[i]))
@@ -18,17 +19,17 @@ int main()
             val = s1[i];
             if(val > 122 && islower(s[i]))
             {
-                s1[i] = (s1[i] - 122) + 96;
+                s1[i] = (s1[i]%122) + 96;
             }
             else if(val > 90 && isupper(s[i]))
             {
-                s1[i] = (s1[i] - 90) + 64;
+                s1[i] = (s1[i]%90) + 64;
             }
         }
         else
         	s1[i] = s[i];
     }
-    s[n-1] = '\0';
+    s1[n-1] = '\0';
     cout<<s1;
     return 0;
 }
